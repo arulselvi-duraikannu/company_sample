@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Company Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Postal code</th>
+      <th>Nearest city</th>
+      <th>Year last report</th>
+      <th>Revenue</th>
+      <th>Income</th>
+      <th>Population</th>
+      <th>Business category</th>
+      <th>Description</th>
+      <th>Keyword</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @company_details.each do |company_detail| %>
+      <tr>
+        <td><%= company_detail.name %></td>
+        <td><%= company_detail.address %></td>
+        <td><%= company_detail.city %></td>
+        <td><%= company_detail.state %></td>
+        <td><%= company_detail.p_code %></td>
+        <td><%= company_detail.nearest_city %></td>
+        <td><%= company_detail.year_last_report %></td>
+        <td><%= company_detail.revenue %></td>
+        <td><%= company_detail.income %></td>
+        <td><%= company_detail.population %></td>
+        <td><%= company_detail.business_category %></td>
+        <td><%= company_detail.description %></td>
+        <td><%= company_detail.keyword %></td>
+        <td><%= link_to 'Show', company_detail %></td>
+        <td><%= link_to 'Edit', edit_company_detail_path(company_detail) %></td>
+        <td><%= link_to 'Destroy', company_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Company detail', new_company_detail_path %>

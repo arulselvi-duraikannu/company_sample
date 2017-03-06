@@ -1,0 +1,73 @@
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @company_detail.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @company_detail.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @company_detail.city %>
+
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @company_detail.state %>
+</p>
+
+<p>
+  <strong>Postal code:</strong>
+  <%= @company_detail.p_code %>
+</p>
+
+<p>
+  <strong>Nearest city:</strong>
+  <%= @company_detail.nearest_city %>
+</p>
+
+<p>
+  <strong>Year last report:</strong>
+  <%= @company_detail.year_last_report %>
+</p>
+
+<p>
+  <strong>Revenue:</strong>
+  <%= @company_detail.revenue %>
+</p>
+
+<p>
+  <strong>Income:</strong>
+  <%= @company_detail.income %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @company_detail.population %>
+</p>
+
+<p>
+  <strong>Business category:</strong>
+  <%= @company_detail.business_category %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @company_detail.description %>
+</p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @company_detail.keyword %>
+</p>
+
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@company_detail.latitude},#{@company_detail.longitude}&markers=#{@company_detail.latitude},#{@company_detail.longitude}&zoom=7&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
+              class: 'img-fluid img-rounded', alt: "#{@company_detail.city} on the map"%>
+<%= link_to 'Edit', edit_company_detail_path(@company_detail) %> |
+<%= link_to 'Back', company_details_path %>

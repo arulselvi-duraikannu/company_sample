@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  p_code: 1
+  nearest_city: MyString
+  distance: 1
+  year_last_report: 2017-03-06
+  revenue: 1
+  income: 1
+  population: 1
+  business_category: MyString
+  description: MyString
+  keyword: MyString
+
+two:
+  name: MyString
+  address: MyString
+  city: MyString
+  state: MyString
+  p_code: 1
+  nearest_city: MyString
+  distance: 1
+  year_last_report: 2017-03-06
+  revenue: 1
+  income: 1
+  population: 1
+  business_category: MyString
+  description: MyString
+  keyword: MyString
